@@ -14,7 +14,7 @@ const { isLoggedIn } = require("../middleware/isLoggedIn");
 
 router.post("/register", registerUser);
 
-router.get("/login", isLoggedIn, loginUser);
+router.get("/login", loginUser);
 
 router.get("/logout", logoutUser);
 
